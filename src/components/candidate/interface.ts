@@ -27,3 +27,19 @@ export interface Project {
   description: string;
   link?: string;
 }
+
+export type Profile = {
+  name: string;
+  email: string;
+  rolePreference: string;
+  locationPreference: string;
+  skills: string[];
+  hobbies?: string;
+  education?: string;
+  experience: Experience[];
+  projects: Project[];
+};
+
+export type ProfilePreviewProps = {
+  profile: Profile;
+};
