@@ -13,3 +13,17 @@ export interface ButtonProps {
   type?: "button" | "submit";
   variant?: "primary" | "secondary";
 }
+
+export interface Experience {
+  company: string;
+  role: string;
+  duration: string;
+  description: string;
+}
+
+export interface Project {
+  title: string;
+  techStack: string;
+  description: string;
+  link?: string;
+}
